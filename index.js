@@ -40,15 +40,15 @@ function setAnimation(color) {
 
 function checkAnswer(currentLevel) {
    if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
-    //    console.log("success");
+        console.log("success");
 
        if (gamePattern.length === userClickedPattern.length) {
-            userClickedPattern = [];
-            console.log("limpou userClickedPattern");
+              setTimeout(function() {
+                nextSequence();
+              }, 1000);
+            
        }
-       setTimeout(function() {
-            nextSequence();
-        }, 1000);
+    
    } else {
        console.log("wrong");
 
@@ -70,7 +70,7 @@ function clickButton() {
         setAnimation(userChosenColor);
         //userClickedPattern is for keeping track of the sequence of colors that the user clicks on
        userClickedPattern.push(userChosenColor);
-       checkAnswer(level-1);
+       checkAnswer(userClickedPattern.length-1);
       
     });
 
