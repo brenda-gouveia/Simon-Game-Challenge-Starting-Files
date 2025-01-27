@@ -9,6 +9,7 @@ O jogo possui um contador de nível que aumenta a cada rodada que o jogador acer
  var buttonColors = ["red", "blue", "green", "yellow"];
 
 function nextSequence(){
+    userClickedPattern = [];
     
 
     let randomNumber = Math.floor(Math.random() * 4);
