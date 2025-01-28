@@ -82,6 +82,8 @@ function startOver() {
     level = 0;
     gamePattern = [];
     userClickedPattern = [];
+    main();
+    console.log("startOver");
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -89,10 +91,10 @@ function main(){
     $(document).keydown(function() {
         if (level === 0) {
             nextSequence();
+            clickButton();
         }
     });
 
-    clickButton();
-
+    
 }
 main();
