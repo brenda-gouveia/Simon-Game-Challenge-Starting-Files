@@ -3,6 +3,9 @@
 ## Overview
 This project is a web-based implementation of the classic Simon's Game, a memory game where players must repeat a sequence of button presses in the correct order. The game increases in difficulty with each successful round, and the player must start over if they make a mistake.
 
+OBS: This project is part of The Complete Full-Stack Web Development Bootcamp 2024 from Udemy and taught by Dr. Angela Yu
+
+
 ## Features
 - Four colored buttons (red, blue, green, yellow)
 - Randomly generated sequences of button presses
